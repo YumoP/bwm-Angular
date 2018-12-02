@@ -1,0 +1,45 @@
+@import 'variables';
+
+
+.navbar {
+  padding: 15px;
+  margin-bottom: 40px;
+
+
+  .bwm-search {
+    height: 50px;
+    width: 300px;
+  }
+
+
+  .navbar-brand {
+    margin-left: 30px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: $main-color;
+    text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000, 
+     0 0 40px #383738, 0 0 55px #00000060, 0 0 75px #0000003b;
+  }
+
+
+  .nav-item {
+    font-size: 14px;
+  }
+
+
+  .btn-bwm-search {
+    border-color:$main-color;
+    color:$main-color;
+
+
+    &:hover, &:focus, &:active {
+      background-color: transparent;
+      border-color: #C70039 !important;
+      background-color: #91090F;
+      color:white;
+      box-shadow: 0 0 5px #df0341, 0 0 10px #df0341, 0 0 20px #df0341, 0 0 3px #F44336, 
+      0 0 4px #df0341, 0 0 5px #df0341, 0 0 7px #b40e02;
+    }
+  }
+}
