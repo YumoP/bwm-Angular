@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "bwm",
       "schematics": {    
         "@schematics/angular:component": {
           "styleext": "scss"
@@ -30,7 +30,8 @@
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+            ],
             "stylePreprocessorOptions":{
               "includePaths": [
                 "./src/styles"
