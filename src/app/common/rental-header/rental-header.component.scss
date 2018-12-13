@@ -1,0 +1,74 @@
+@import 'variables';
+
+  .navbar {
+    padding: 25px;
+    margin-bottom: 40px;
+    
+    background: transparent !important;
+    .bwm-search {
+      height: 44px;   
+
+    }
+    .navbar-brand {
+      margin-left: 30px;
+      font-size: 35px;
+      letter-spacing: 2px;
+      font-weight: 900;
+      color: white;
+      text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000, 
+      0 0 40px #383738, 0 0 55px #00000060, 0 0 75px #0000003b;
+      -webkit-text-stroke: 1px black;
+    }
+    .airbnb-brand {
+      margin-left: 10px;
+      font-size: 35px;
+      letter-spacing: 2px;
+      font-weight: 900;
+      color: $main-color;
+      text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000, 
+      0 0 40px #383738, 0 0 55px #00000060, 0 0 75px #0000003b;
+      -webkit-text-stroke: 1px black;
+      &:hover{
+        font-size: 35px;
+        color: white;
+      }
+    }
+
+
+    .nav-item {
+      font-size: 14px;
+      .nav-link{
+        text-shadow: 0 0 2px rgb(0, 0, 0), 0 0 2px #000000, 0 0 2px #ffffff, 0 0 3px rgba(2, 0, 0, 0), 
+        0 0 1px rgb(0, 0, 0), 0 0 5px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+        color:white;
+        font-weight: 600;
+        &:hover{
+          color:rgb(255, 255, 255);
+          text-shadow: 0 0 2px rgb(0, 0, 0), 0 0 2px #cf0000, 0 0 2px #ffffff, 0 0 3px rgba(2, 0, 0, 0), 
+          0 0 1px rgb(0, 0, 0), 0 0 5px rgb(255, 255, 255), 0 0 15px rgb(182, 0, 0);
+        }
+      }
+    }
+
+
+    .btn-bwm-search {
+      border-color:white;
+      margin: 0;
+      color:white;
+      font-size: 13px;
+      transition: 0.3s;
+      padding: 0 auto;
+      font-weight: 500;
+
+      &:hover, &:focus, &:active {
+        background-color: transparent;
+        border-color: #C70039 !important;
+        background-color: #91090F;
+        color:white;
+        box-shadow: 0 0 5px #df0341, 0 0 10px #df0341, 0 0 20px #df0341, 0 0 3px #F44336, 
+        0 0 4px #df0341, 0 0 5px #df0341, 0 0 7px #b40e02;
+        text-shadow: 0 0 2px  #070707, 0 0 2px #070107, 0 0 2px #df0341, 0 0 3px #FBDFDC, 
+        0 0 1px #DCDEFB, 0 0 5px  #FBDFDC, 0 0 85px #383738;
+      }
+    }
+  }

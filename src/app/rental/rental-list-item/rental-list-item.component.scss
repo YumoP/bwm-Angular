@@ -1,0 +1,33 @@
+a {
+  &:hover, &:focus{
+    text-decoration: none;
+  }
+}
+.bwm-card {
+  border-radius:1.6%;
+  border: none;
+  box-shadow: 0 0 5px #000000, 0 0 3px #000000e7, 0 0 8px #0a0a0a, 0 0 10.3px #000000, 
+  0 0 11.4px #3d3b3d, 0 0 5px #0c0b0bbd, 0 0 15px #000000c0;;
+  .card-block {
+    padding-top: 8px;
+    .card-subtitle {
+      margin: 0;
+      font-weight: 500;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #16861a;
+    }
+    .card-title {
+      font-size: 19px;
+      margin: 3px 0;
+    }
+
+
+    .card-text {
+      font-size: 14px;
+      font-weight: 300;
+      color: #7e7e7e;
+      margin-bottom: 0;
+    }
+  }
+}

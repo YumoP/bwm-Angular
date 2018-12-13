@@ -1,0 +1,74 @@
+@import 'variables';
+
+  
+  .card{
+    cursor: pointer;
+    width: 100%;
+    height: 200px;  
+    background-color: transparent;
+    border:none;
+    &:hover > .front{
+      transform: perspective(600px) rotateY(-180deg);
+    }
+    &:hover > .back{
+      transform: perspective(600px) rotateY(0deg);
+    }
+    @media only screen and (max-width: 768px){
+      height:300px;
+      margin-bottom: 20px;
+    }
+    .front{
+      border-radius: 2.2%;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      backface-visibility: hidden;
+      position: absolute;
+      transition: transform .6s linear;
+      
+      transform: perspective(600px) rotateY(0deg);
+      box-shadow: 0 0 5px #000000, 0 0 3px #000000e7, 0 0 8px #0a0a0a, 0 0 10.3px #000000, 
+      0 0 11.4px #3d3b3d, 0 0 5px #0c0b0bbd, 0 0 15px #000000c0;;
+      img{
+        width:100%;
+        height:100%;
+      }
+    }
+    .back{
+      border-radius: 2.2%;
+      background: #f1f1f1;
+      transform: perspective(600px) rotateY(180deg);
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      backface-visibility: hidden;
+      position: absolute;
+      transition: transform .6s linear;
+      box-shadow: 0 5px #000000, 0 0 3px #000000e7, 0 0 8px #0a0a0a, 0 0 10.3px #000000, 
+      0 0 11.4px #3d3b3d, 0 0 5px #0c0b0bbd, 0 0 15px #000000c0;;
+      .back-content{
+        color: #2c3e50;
+        text-align: center;
+        width: 100%;
+        .sm{
+          margin: 20px 0;
+          a{
+            text-decoration: none;
+            display: inline-flex;
+            width: 40px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            color: #2c3e50;
+            font-size: 18px;
+            transition: 0.4s;
+            border-radius: 50%;
+            &:hover {
+              background: #2c3e50;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
