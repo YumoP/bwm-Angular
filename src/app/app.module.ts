@@ -23,7 +23,6 @@ const routes: Routes = [
     headerComponent,
     AppComponent,
     RentalHeaderComponent
-    
   ],
   imports: [
     BrowserModule,
