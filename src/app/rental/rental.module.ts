@@ -7,8 +7,9 @@ import { RecommendModule } from './recommend/recommend.module';
 import { RentalService } from './shared/rental.service';
 import { Routes, RouterModule } from '@angular/router';
 import { RentalDetailComponent } from './rental-detail/rental-detail.component';
-import { Rental } from './shared/rental.model';
-
+import { HttpClientModule } from '@angular/common/http';
+import { NgPipesModule } from 'ngx-pipes';
+import { UpperCasePipe } from '../common/pipes/uppercase.pipe';
 
 const routes: Routes = [
   { 
@@ -24,12 +25,15 @@ const routes: Routes = [
     RentalComponent,
     RentalListComponent,
     RentalListItemComponent,
-    RentalDetailComponent
+    RentalDetailComponent,
+    UpperCasePipe
   ],
   imports:[
     RecommendModule,
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    HttpClientModule,
+    NgPipesModule
   ],  
   exports:[
     RentalComponent,
