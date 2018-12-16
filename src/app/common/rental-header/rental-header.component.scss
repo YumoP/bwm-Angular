@@ -1,10 +1,11 @@
 @import 'variables';
 
   .navbar {
-    padding: 25px;
+    padding: 15px;
     margin-bottom: 40px;
-    
-    background: transparent !important;
+    box-shadow: 0 0 5px #000000, 0 0 3px #000000e7, 0 0 8px #0a0a0a, 0 0 10.3px #000000, 
+    0 0 11.4px #3d3b3d, 0 0 5px #0c0b0bbd, 0 0 15px #000000c0;
+    background: rgba(14, 13, 13, 0.651) !important;
     .bwm-search {
       height: 44px;   
 

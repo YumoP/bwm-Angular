@@ -10,13 +10,13 @@ import { Rental } from '../shared/rental.model';
 })
 export class RentalDetailComponent implements OnInit {
   rental: Rental;
-  constructor(private route: ActivatedRoute, private service:RentalService) { }
+  constructor(private route: ActivatedRoute, private service:RentalService) {}
 
   ngOnInit() {
     this.route.params.subscribe(
       (params)=>{
-        this.getRental(params['rentalId']);
-        //console.log(params);
+        //console.log(this.route.params);
+        this.getRental(params.rentalId);
       }
     );
   }

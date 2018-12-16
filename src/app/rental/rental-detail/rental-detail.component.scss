@@ -1,0 +1,76 @@
+@import 'variables';
+
+#rentalDetails {
+  border: 0.5px solid rgba(4, 45, 58, 0.911);
+  border-radius: 3%;
+  padding: 20px;
+  background-color: rgba(0, 1, 24, 0.623);
+  box-shadow: 0 0 5px #000000, 0 0 3px #000000e7, 0 0 8px #0a0a0a, 0 0 10.3px #000000, 
+  0 0 11.4px #3d3b3d, 0 0 5px #0c0b0bbd, 0 0 15px #000000c0;
+  .upper-section {
+    img {
+      width: 100%;
+      border-radius: 3%;
+      box-shadow: 0 0 5px #000000, 0 0 3px #000000e7, 0 0 8px #0a0a0a, 0 0 10.3px #000000, 
+      0 0 11.4px #3d3b3d, 0 0 5px #0c0b0bbd, 0 0 15px #000000c0;
+    }
+
+    margin-bottom: 30px;
+  }
+
+  .details-section {
+    color: $main-text-color;
+    .rental {
+      &-type {
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      &-title {
+        margin-bottom: 5px;
+        font-size: 32px;
+        font-weight: 700;
+      }
+
+      &-city {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 20px;
+      }
+
+      &-room-info {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 16px;
+
+        span {
+          margin-right: 10px;
+        }
+
+        i {
+          margin-right: 2px;
+        }
+      }
+
+      &-description {
+        font-weight: 300;
+        margin-bottom: 30px;
+      }
+
+      &-assets {
+        .title {
+          margin-bottom: 10px;
+          font-weight: 700;
+          font-size: 22px;
+        }
+        span {
+          display: block;
+          margin-bottom: 15px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
