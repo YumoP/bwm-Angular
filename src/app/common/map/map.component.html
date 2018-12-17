@@ -1,0 +1,28 @@
+<agm-map 
+  (scaleControl) = "true" 
+  (mapReady)="mapReadyHandler()" 
+  [zoom]="13" 
+  [latitude]="lat" 
+  [longitude]="lng"
+>
+  <agm-circle 
+    *ngIf="!isError"
+    [latitude]="lat" 
+    [longitude]="lng"
+    [radius]="800"
+    [fillColor]="'#05B5B8'"
+    [fillOpacity]="0.34"
+    [strokeColor]="'#0583B8'"
+    [strokeOpacity]="0.66"
+  >
+  </agm-circle>
+  <agm-info-window
+    *ngIf="isError"
+    [latitude]="0"
+    [longitude]="0"
+    [maxWidth]="300"
+    [isOpen]="true"  
+  >
+  Cannot find the location
+  </agm-info-window>
+</agm-map>
