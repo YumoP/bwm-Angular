@@ -8,8 +8,8 @@ import { ChangeDetectorRef } from '@angular/core'
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
-  lat: number = 0;
-  lng: number = 0;
+  lat: number = 39.1854;
+  lng: number = -99.3576;
   isError: boolean = false;
   @Input() location: string;
   constructor(private service: MapService,
